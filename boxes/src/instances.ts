@@ -1,5 +1,5 @@
 
-//boxes: [ { id, width, height, backgroundColor }, ... ]
+
 export interface IBox {
   id: string;
   width: number;
@@ -13,11 +13,13 @@ export interface IBoxFormData {
   backgroundColor: string
 }
 
-// this legal?
+// this legal? YES
 export interface INewBoxFormProps {
   createBox: Function
+  // createBox: (height: number, width: number, backgroundColor: string) => void
 }
 
+//TODO: can extend IBox
 export interface IBoxProps {
   id: string,
   width: number,
@@ -25,3 +27,4 @@ export interface IBoxProps {
   backgroundColor: string,
   remove: Function
 }
+

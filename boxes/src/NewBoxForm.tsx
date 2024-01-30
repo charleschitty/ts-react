@@ -16,7 +16,7 @@ import { IBoxFormData, INewBoxFormProps } from "./instances";
 const INITIAL_DATA = {height: "100", width: "100", backgroundColor: ""};
 
 //Interfaces for functions?
-function NewBoxForm({ createBox} : INewBoxFormProps) {
+function NewBoxForm({ createBox } : INewBoxFormProps) {
   const [formData, setFormData] = useState<IBoxFormData>(INITIAL_DATA);
 
   /** Update form input. */
